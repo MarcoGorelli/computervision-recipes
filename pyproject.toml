@@ -1,2 +1,11 @@
 [tool.black]
 line-length = 79
+
+[tool.nbqa.config]
+black = "pyproject.toml"
+
+[tool.nbqa.mutate]
+black = 1
+
+[tool.nbqa.ignore_cells]
+black = "%%writefile"
